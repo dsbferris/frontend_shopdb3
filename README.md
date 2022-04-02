@@ -22,7 +22,8 @@ With additional subcategories like this
 ![Subcategories tablet](readme_images/mockup_subcatergories_tablet.png)
 
 For Mobile  
-> throw new NotImplementedException("UUPS!")
+
+    throw new NotImplementedException("UUPS!")
 
 ## Packages used
 
