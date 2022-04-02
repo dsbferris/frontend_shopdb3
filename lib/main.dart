@@ -1,6 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:shopdb3_frontend/shop_api.dart';
 
 void main() async {
+  final api = ShopApi();
+  final products = await api.fakeAllProduct(10);
+  final users = await api.fakeAllUsers(10);
+  for (var u in users) {
+    print(u);
+  }
+  for (var p in products) {
+    print(p);
+  }
   runApp(const MyApp());
 }
 

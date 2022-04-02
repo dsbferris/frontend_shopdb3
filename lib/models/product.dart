@@ -9,6 +9,23 @@ class Product {
   final int buyCount; //How often it was bought (for statistics)
   final int count; //Amount of product in Cart
 
-  Product(this.name, this.price, this.imagePath, this.quantity, this.buyCount,
-      this.count, this.productId);
+  Product(
+      {required this.name,
+      required this.price,
+      required this.imagePath,
+      required this.quantity,
+      required this.buyCount,
+      required this.count,
+      required this.productId});
+
+  static Product fakeProduct(int id) {
+    return Product(
+        name: "Kaffee",
+        price: Decimal.parse("0.25"),
+        imagePath: "blank.png",
+        quantity: 999,
+        buyCount: 0,
+        count: 0,
+        productId: id);
+  }
 }
