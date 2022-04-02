@@ -1,6 +1,10 @@
 # shopdb3
 
-A new Flutter project.
+A new Flutter project.  
+~~Using [AppWrite](https://appwrite.io/) as backend service. (similar to firebase)~~  
+Maybe AppWrite isn't the way to go, as it forces features that aim at full fledged production projects, which is more than we need.  
+Seems like we gotta do our own.  
+Using [Decimal](https://pub.dev/packages/decimal) for working with money values.
 
 ## Getting Started
 
